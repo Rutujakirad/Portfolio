@@ -1,0 +1,35 @@
+/* Responsive.css */
+
+/* Medium devices (tablets, 768px and up) */
+@media (max-width: 768px) {
+    .header, .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .nav-links {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .project-list {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Small devices (phones, 480px and up) */
+  @media (max-width: 480px) {
+    .home-section h2 {
+      font-size: 2rem;
+    }
+  
+    .skills-list, .soft-skills {
+      text-align: left;
+      padding: 0 15px;
+    }
+  
+    .experience-item ul, .soft-skills {
+      padding-left: 10px;
+    }
+  }
+  

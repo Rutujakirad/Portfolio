@@ -1,23 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
-
+// App.js
+import React from 'react';
+import './styles/App.css';
+import './styles/GalaxyBackground.css';
+import Header from './components/Header';
+import Home from './components/Home';
+import About from './components/About';
+import Projects from './components/Projects';
+import Experience from './components/Experience';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
+import Footer from './components/Footer';
+//import Tabs from './components/Tabs';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="stars">
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+        <div className="star"></div>
+      </div>
+      <Header />
+      <Home />
+     {/* // <Tabs/> */}
+      <About />
+      <Projects />
+      <Experience />
+      <Skills />
+      <Contact />
+      <Footer />
     </div>
   );
 }

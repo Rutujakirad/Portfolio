@@ -1,0 +1,101 @@
+/* About.css */
+.about-section {
+    position: relative;
+    padding: 60px 20px;
+    text-align: center;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    margin: 20px auto;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.7); /* Shadow for depth */
+    transform: translateZ(0); /* Enable GPU acceleration for smooth transitions */
+    overflow: hidden; /* Prevent overflow of child elements */
+  }
+  
+  .about-content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    transition: transform 0.5s, box-shadow 0.5s; /* Transition for hover effects */
+  }
+  
+  .about-title {
+    font-size: 2.5rem; /* Larger title font size */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); /* Add shadow to the title */
+  }
+  
+  .about-description {
+    font-size: 1.2rem; /* Larger description font size */
+    margin-bottom: 20px; /* Space below description */
+  }
+  
+  .education-title {
+    font-size: 1.8rem; /* Title font size for education */
+    margin-top: 30px; /* Space above education title */
+    text-decoration: underline; /* Underline for emphasis */
+  }
+  
+  .education-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+  }
+  
+  .education-item {
+    margin: 15px 0; /* Space between items */
+    padding: 10px 20px; /* Padding for items */
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Center icons vertically */
+    background: rgba(255, 255, 255, 0.1); /* Light background for items */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth scaling effect */
+    position: relative; /* For positioning */
+    overflow: hidden; /* Prevent overflow */
+  }
+  
+  .education-item:hover {
+    transform: translateY(-5px); /* Slightly lift item on hover */
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.3); /* Light shadow on hover */
+  }
+  
+  .icon {
+    margin-right: 10px; /* Space between icon and text */
+    font-size: 1.5rem; /* Icon size */
+    color: #FFD700; /* Gold color for icons */
+    transition: transform 0.3s; /* Smooth transition for icon effects */
+  }
+  
+  .education-item:hover .icon {
+    transform: rotate(360deg); /* Rotate icon on hover */
+  }
+  
+  /* Background 3D effect */
+  @keyframes float {
+    0% { transform: translatey(0); }
+    50% { transform: translatey(-10px); }
+    100% { transform: translatey(0); }
+  }
+  
+  .education-item::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.05); /* Light shimmer effect */
+    border-radius: 10px;
+    transform: translate(-50%, -50%) scale(1.2);
+    animation: float 3s ease-in-out infinite; /* Floating animation */
+    z-index: 0; /* Behind content */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 600px) {
+    .about-section {
+      padding: 40px 10px;
+    }
+  }
+  

@@ -1,0 +1,85 @@
+/* Experience.css */
+.experience-section {
+    padding: 40px;
+    background-color: #1a1a2e;
+    color: #ffffff;
+    text-align: center;
+  }
+  
+  .experience-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffdd57;
+  }
+  
+  .experience-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .experience-card {
+    background-color: #222;
+    border-radius: 10px;
+    padding: 20px;
+    width: 90%;
+    max-width: 500px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .experience-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+  }
+  
+  .experience-icon {
+    font-size: 2.5rem;
+    color: #ffdd57;
+    margin-bottom: 10px;
+  }
+  
+  .experience-duration {
+    font-size: 0.9rem;
+    color: #b3b3b3;
+    margin: 5px 0 15px;
+  }
+  
+  .experience-card ul {
+    list-style: none;
+    padding: 0;
+    text-align: left;
+  }
+  
+  .experience-card li {
+    font-size: 0.95rem;
+    color: #e0e0e0;
+    position: relative;
+    padding-left: 20px;
+    margin-bottom: 8px;
+  }
+  
+  .experience-card li::before {
+    content: "•";
+    color: #ffdd57;
+    position: absolute;
+    left: 0;
+  }
+  
+  @media (min-width: 600px) {
+    .experience-cards {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+  
+  @media (hover: hover) {
+    .experience-card:hover .experience-icon {
+      transform: scale(1.1) rotate(15deg);
+    }
+  }
+  

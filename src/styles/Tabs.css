@@ -1,0 +1,53 @@
+/* Tabs.css */
+.tabs-container {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  .tabs button {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 5px;
+  }
+  
+  .tabs button.active {
+    background-color: rgba(42, 102, 159, 0.8);
+    color: white;
+  }
+  
+  .tabs button:hover {
+    background-color: rgba(42, 102, 159, 0.5);
+  }
+  
+  .tab-content {
+    padding: 20px;
+    color: #fff;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .tab-content h2 {
+    margin-top: 0;
+  }
+  
+  .tab-content p {
+    line-height: 1.5;
+  }
+  

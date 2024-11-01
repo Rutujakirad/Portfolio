@@ -1,0 +1,49 @@
+/* Header.css */
+.header {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    align-items: center; /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    height: 100vh; /* Full height of the viewport */
+    background: rgba(255, 255, 255, 0.1); /* Glass effect background */
+    backdrop-filter: blur(10px); /* Blurred background */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    color: #fff; /* White text for visibility */
+    text-align: center; /* Center text */
+    position: relative; /* Positioning for any background effects */
+  }
+  
+  .header-title {
+    font-size: 2.5rem; /* Large title size */
+    margin-bottom: 20px; /* Space between title and links */
+    animation: fadeIn 1s; /* Fade in effect for the title */
+  }
+  
+  .nav-links {
+    display: flex; /* Use flexbox for navigation links */
+    flex-direction: column; /* Align links vertically */
+    gap: 15px; /* Space between links */
+  }
+  
+  .nav-links a {
+    color: #fff; /* White color for links */
+    text-decoration: none; /* Remove underline */
+    padding: 10px 15px; /* Padding for clickable area */
+    border-radius: 5px; /* Rounded corners */
+    transition: background 0.3s, transform 0.2s; /* Transition effects */
+  }
+  
+  .nav-links a:hover {
+    background: rgba(255, 255, 255, 0.2); /* Hover effect */
+    transform: scale(1.05); /* Slight scale effect */
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0; /* Start invisible */
+    }
+    to {
+      opacity: 1; /* Fade in to fully visible */
+    }
+  }
+  

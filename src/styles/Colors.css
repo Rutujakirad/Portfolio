@@ -1,0 +1,9 @@
+/* Colors.css */
+:root {
+    --primary-color: #2A669F;          /* Professional blue */
+    --accent-color: #F2A007;           /* Accent yellow */
+    --background-color: #F4F4F9;       /* Light grey */
+    --text-color: #333333;             /* Dark text */
+    --secondary-text-color: #5A5A5A;   /* Grey for secondary text */
+  }
+  

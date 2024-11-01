@@ -1,0 +1,36 @@
+/* Project.css */
+.projects-section {
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.8);
+    color: #fff;
+  }
+  
+  .project-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+  }
+  
+  .tech-badge {
+    display: inline-flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 5px;
+    font-size: 0.9rem;
+    transition: background 0.3s;
+  }
+  
+  .tech-badge:hover {
+    background: rgba(255, 255, 255, 0.3);
+  }
+  
